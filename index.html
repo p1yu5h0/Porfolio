@@ -1,12 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <title>Piyush Agrawal</title>
+    <meta charset="utf-8">
+    <script data-ad-client="ca-pub-5786004557418872" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/hearts.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Indie+Flower'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+	
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/services.css">
+	<link rel="stylesheet" href="css/dark-mode-button.css">
+	<link rel="stylesheet" href="css/dark-mode.css">
 </head>
+
 <body>
-    Personal Portfolio
+
+    <div class="header">
+		<canvas></canvas><canvas></canvas>
+		<div class="day-night-toggle-wrapper">
+		  <label>
+			<input type="checkbox" checked id="toggleDarkModeButton" onchange="toggleDarkMode()"/>
+			<div class="switch">
+			  <div class="circle">
+				<div class="moon-spots"></div>
+			  </div>
+			  <div class="cloud">
+				<div></div>
+				<div></div>
+			  </div>
+			  <div class="stars">
+				<div></div>
+				<div></div>
+			  </div>
+			</div>
+		  </label>
+		</div>
+        <div class="fixed-content">
+            <img class="port" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/95581/cat.jpg">
+            <h2>Piyush Agrawal</h2>
+            <p style="color:#fff;">Competitve Programmer | WebDeveloper | Open Source enthusiast</p>
+            <div class="icon-row">
+                <a href="https://github.com/p1yu5h0"><i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/p1yu5h/"><i class="fa fa-linkedin"></i></a>
+                <a href="https://twitter.com/p1yu5h0p"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="second">
+        <div class="fixed-content">
+            <h1>About Me</h1>
+            <p>2nd year undergraduate in the Department of Computer Science and Engineering pursuing Bachelor of Technology at Institute of Engineering and Technology DAVV Indore. My interests primarily lie in the areas of Competitve Programming and Web Development.</p>
+        </div>
+    </div>
+
+    <section class="colorlib-about" data-section="about">
+        <div class="container">
+			<div class="center">
+				<script type="text/javascript">
+					var domains = ["Competitive Programming", "Web Developement", "Android Applications", "Machine Learning", "UI / UX Designing"];
+					var icons = ["desktop", "code", "android", "user", "pencil"];
+					var urls = ["cp.html", "https://github.com/p1yu5h0?tab=repositories", "https://github.com/p1yu5h0?tab=repositories", "ml.html", "uiux.html"];
+					var ids = [3, 4, 2, 1, 3];
+					for (let i = 0; i < domains.length; i++) {
+						var dir = (ids[i] % 2 == 0) ? "Right" : "Left";
+						document.write(
+						((i % 5 == 0) ? '<div class="row">' : '') +
+							'<div class="col-sm-4 col-xs-4 col-md-4 col-lg-2 animate-box" data-animate-effect="fadeIn' + dir + '">\
+							  <a href="' + urls[i] + '" >\
+								<div class="services color-' + ids[i] + '">\
+								  <span class="icon2"><i class="fa fa-' + icons[i] + '"></i></span>\
+								  <h3>' + domains[i] + '</h3>\
+								</div>\
+							  </a>\
+							</div>'+ ((i % 5 == 4) ? '</div>' : '')
+						);
+					}
+				</script>
+			</div>
+        </div>
+    </section>
+
+    <br>
+    <br>
+
+    <section class="colorlib-skills" data-section="skills">
+        <div class="colorlib-narrow-content">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+                    <h2>Skills</h2>
+                    <hr>
+                </div>
+            </div>
+			<div class="container">
+				<p class="col animate-box" data-animate-effect="fadeInLeft"><b>Some of the significant aptitudes which will assist me with achieving your objectives.</b></p>
+			</div>
+           
+            <div class="container">
+                <div class="row">
+				
+                    <script type="text/javascript">
+                        var skills = ["C++", "Python", "React.js", "Javascript", "Java/Android", "MySQL/MongoDB", "GitHub/Git"];
+                        var value = [80, 70, 70, 80, 60, 60, 90];
+                        for (let i = 0; i < skills.length; i++) {
+                            var dir = (i % 2 == 0) ? "Right" : "Left";
+                            document.write(
+                                '<div class="col-md-6 animate-box" data-animate-effect="fadeIn' + dir + '">\
+                                  <div class="progress-wrap">\
+                                      <h3>' + skills[i] + '</h3>\
+                                      <div class="progress">\
+                                          <div class="progress-bar color-' + (i + 1) + '" role="progressbar" aria-valuenow="' + value[i] + '" aria-valuemin="0" aria-valuemax="100" style="width:' + value[i] + '%">\
+                                              <span>' + value[i] + '%</span>\
+                                          </div>\
+                                      </div>\
+                                  </div>\
+                              </div>');
+                        }
+                    </script>
+                </div>
+            </div>
+    </section>
+
+    <br>
+    <br>
+
+    <section class="colorlib-experience" data-section="experience">
+        <div class="colorlib-narrow-content">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+                    <h2>Work Experience</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="timeline-centered">
+                            <script type="text/javascript">
+                                var timeSpan = ["Nov 2021- Present", "Oct 2021 - Present", "Mar 2021 - May 2021"];
+                                var AT = ["Arch Labs", "GDG Indore", "FeedBox Indore"];
+                                var internType = ["Developer Intern", "Developer, Member and Volunteer ", "Marketing Intern"];
+                                var descriptions = ["Build Backend for many client projects", "GDG Indore is an amazing tech community for everyone. The community hosts various workshops, study jams, meetups for students, professionals, and anyone who is a tech enthusiast.",
+                                    "Done marketing for FeedBox Indore. I was responsible for managing the website and social media accounts."
+                                ];
+                                var iclass = ["code", "user", "code"];
+                                var color = [3, 5, 1];
+                                for (let i = 0; i < AT.length; i++) {
+                                    var dir = (i % 2 == 0) ? "Right" : "Left";
+                                    document.write(
+                                        '<article class="timeline-entry animate-box" data-animate-effect="fadeIn' + dir + '">\
+										<div class="timeline-entry-inner">\
+											<div class="timeline-icon color-' + color[i] + '">\
+												<i class="fa fa-' + iclass[i] + '"></i>\
+											</div>\
+											<div class="timeline-label">\
+												<h2><a href="#">' + AT[i] + '</a> <span>' + timeSpan[i] + '</span></h2>\
+												<p><strong><a href="#">' + internType[i] + '</a></strong>\
+													<br> ' + descriptions[i] + '</p>\
+												<p></p>\
+											</div>\
+										</div>\
+									</article>');
+                                }
+                            </script>
+                            <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
+                                <div class="timeline-entry-inner">
+                                    <div class="timeline-icon color-3">
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+    </section>
+
+    
+    <section class="colorlib-project" data-section="project">
+        <div class="colorlib-narrow-content">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+                    <h2>Projects & Publications</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <script type="text/javascript">
+                        var domains = ["Discord",
+                            "SIP Calculator",
+                            "Disney+ Hotstar",
+                        ];
+                        var ppDomains = ["It took me around 2 weeks to make my own version of Discord in which I have added basic features like real-time chatting with the help of firebase, making channels in which my friends can come and chat with each other.",
+                            "Worked with a team of 10 people and developed and implemented a functional SIP calculator that estimates users' investment growth and strategies. Tech Involved : React, HTML, CSS, JavaScript, Redux, Figma, etc.",
+                            "Tried to make a Disney Plus Clone from scratch and made it in a week. Tech Involved : React, HTML, CSS, JavaScript, Redux, Figma, etc."
+                        ];
+                        var urls = ["https://piyush-discord.netlify.app/",
+                            "http://sip.archlabs.co.in/",
+                            "https://disney-static-p1yu5h.netlify.app/",
+                        ];
+                        var icons = ["map", "language", "road"];
+                        var mulx10 = Array.from(Array(domains.length).keys());
+                        for (let i = 0; i < domains.length; i++) {
+                            var dir = (ids[i] % 2 == 0) ? "Right" : "Left";
+                            document.write(
+                                '<div class="col-md-12 animate-box" data-animate-effect="fadeIn' + dir + '">\
+                              <a href="' + urls[i] + '" >\
+                                <div class="services color-' + (mulx10[i] + 1) + '">\
+                                  <span class="icon2"><i class="fa fa-' + icons[mulx10[i]] + '"></i></span>\
+                                  <h3>' + domains[i] + '</h3>\
+                                  <p>' + ppDomains[i] + '</p>\
+                                </div>\
+                              </a>\
+                            </div>'
+                            );
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="footer">
+        <div class="second">
+            <div class="fixed-content">
+                <h1>Contact Me</h1>
+            </div>
+        </div>
+        <div class="fixed-content">
+            <div class="icon-row blue">
+                <a href="https://twitter.com/p1yu5h0"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com/piyush200205"><i class="fa fa-facebook"></i></a>
+                <a href="mailto:piyush200205@gmail.com"><i class="fa fa-envelope"></i><a/a>
+			<a href="https://stackoverflow.com/users/14668209/p1yu5h0"><i class="fa fa-stack-overflow"></i></a>
+                <a href="skype:live:.cid.fd89af8f47d6b546"><i class="fa fa-code"></i></a>
+            </div>
+            <p></p>
+            <i class="fa fa-chevron-up blue" style="color:#bbb;" onclick="window.scroll({  top: 0,  left: 0,  behavior: 'smooth'});"></i>
+        </div>
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/jquery.easing.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/modernizr.min.js"></script>
+	<script src="js/hex.js"></script>
+	<script src="js/dark.mode.toggle.js"></script>
+    <script src="js/script.js"></script>
+
 </body>
+
 </html>
